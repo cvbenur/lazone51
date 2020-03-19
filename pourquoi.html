@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Efranchouille - La Zone 51</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <style type="text/css">
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 60vh;
+      }
+
+      @media (max-width: 740px) {
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100vh;
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 850px) {
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100vh;
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+    </style>
+</head>
+
+<body style="background-color: #faff7d;">
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar"">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <div>
+          <strong class="blue-text">La</strong>
+          <strong>Zone</strong>
+          <strong class="red-text">51</strong>
+        </div>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Accueil</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Pourquoi ?
+              <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item mr-2">
+            <a href="https://www.facebook.com/efranchouille" class="nav-link border border-light rounded">
+              <i class="fab fa-facebook-f mr-2"></i>
+              <strong class="blue-text">Like </strong>
+              <strong>notre </strong>
+              <strong class="red-text">page !</strong>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link border border-light rounded">
+              <i class="fab fa-instagram mr-2"></i>
+              <strong class="blue-text">Lâche </strong>
+              <strong>un </strong>
+              <strong class="red-text">follow !</strong>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
+
+      <!--Section: Pourquoi pas -->
+      <section id="pourquoi-pas">
+
+        <h2 class="my-5 h3 pt-5 pb-5 text-center fadeIn">Hola, voyageur ! Viens donc prendre place à notre table !</h2>
+
+        <div class="text-center">
+          <h4 class="pb-2">Alors comme ça, on se demande pourquoi ?</h4>
+          <h4 class="pb-5">Reste un peu pour le barbeuc', on en parlera juste après !</h4>
+
+          <div class="pb-5">
+            <img class="img-fluid w-50 z-depth-1-half" src="./img/franchouille/barbeuc/barbeuc1.jpg" alt="Quelle belle viande !">
+            <p id="description" class="pt-1">Alors, qu'est-ce que je lui mets ?</p>
+          </div>
+
+          <div class="pb-5">
+            <img class="img-fluid w-50 z-depth-1-half" src="./img/franchouille/barbeuc/barbeuc2.jpg" alt="Quelle cuisson parfaite !">
+            <p id="description" class="pt-1">Sérieux, c'est pas beau ça ?</p>
+          </div>
+
+          <div class="pb-5">
+            <img class="img-fluid w-50 z-depth-1-half" src="./img/franchouille/barbeuc/allez-une-petite.jpg" alt="Hola, pas plus haut que le bord !">
+            <p id="description" class="pt-1">Il voudrait pas un petit quelque chose à boire, pour aller avec ?</p>
+          </div>
+
+          <div class="pb-5">
+            <img class="img-fluid w-50 z-depth-1-half" src="./img/franchouille/barbeuc/sante.jpg" alt="Allez, santé !">
+            <p id="description" class="pt-1">Allez, à la tienne cher ami !</p>
+          </div>
+
+          <h4 class="pb-2">Merci d'être resté, ça nous a fait plaisir !</h4>
+          <h4 class="pb-5">Clique pour avoir ta réponse !</h4>
+
+          <div class="pb-5">
+            <a id="show-btn" class="btn btn-outline-black animated bounce slower infinite">
+              <i class="fa fa-wine-bottle red-text mr-2"></i>
+              <strong>Clique ici !</strong>
+              <i class="fa fa-wine-bottle red-text ml-2"></i>
+            </a>
+  
+            <h4 id="reponse" class="pt-5 d-none"><strong>Et pourquoi pas ?</strong></h4>
+          </div>
+
+        </div>
+
+        
+
+      </section>
+      <!--Section: Pourquoi pas -->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small pt-2 mt-4 wow fadeIn">
+
+    <!-- Mur des Slogans -->
+    <div id="carousel-example-2z" class="carousel slide carousel-fade" data-ride="carousel" style="height: 25vh;">
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-2z" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-2z" data-slide-to="1"></li>
+        <li data-target="#carousel-example-2z" data-slide-to="2"></li>
+        <li data-target="#carousel-example-2z" data-slide-to="3"></li>
+        <li data-target="#carousel-example-2z" data-slide-to="4"></li>
+      </ol>
+      <!--/.Indicators-->
+  
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+  
+        <!--First slide-->
+        <div class="carousel-item active">
+          <div class="view">
+  
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-slight d-flex justify-content-center align-items-center">
+
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <div>
+                  <h5 class="mb-3">Mur des Slogans</h5>
+                </div>
+
+
+                <div class="pt-4 mb-4 font-italic">
+                    <i class="fas fa-wine-bottle mr-2 yellow-text"></i>
+                    <strong>1, 2, 3, </strong><strong class="blue-text">PAS</strong><strong class="white-text">-TA-</strong><strong class="red-text">GA</strong><strong> !</strong>
+                    <i class="fas fa-wine-bottle ml-2 yellow-text"></i>
+                </div>
+              </div>
+              <!-- Content -->
+  
+            </div>
+            <!-- Mask & flexbox options-->
+  
+          </div>
+        </div>
+        <!--/First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+          <div class="view">
+  
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-slight d-flex justify-content-center align-items-center">
+
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+                <div>
+                  <h5 class="mb-3">Mur des Slogans</h5>
+                </div>
+
+
+                <div class="pt-4 mb-4 font-italic">
+                    <i class="far fa-grin-tongue-squint mr-2 blue-text"></i>
+                    <strong class="blue-text">RAH </strong><strong>! RAH ! </strong><strong class="red-text">RAH </strong><strong>!</strong>
+                    - JM Bigard, 2019
+                    <i class="far fa-grin-tongue-squint ml-2 blue-text"></i>
+                </div>
+              </div>
+              <!-- Content -->
+  
+            </div>
+            <!-- Mask & flexbox options-->
+  
+          </div>
+        </div>
+        <!--/Second slide-->
+  
+        <!--Third slide-->
+        <div class="carousel-item">
+          <div class="view">
+  
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-slight d-flex justify-content-center align-items-center">
+  
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+
+                <div>
+                  <h5 class="mb-3">Mur des Slogans</h5>
+                </div>
+
+
+                <div class="pt-4 mb-4 font-italic">
+                    <i class="fas fa-wine-bottle mr-2 yellow-text"></i>
+                    <strong class="white-text">Un </strong><strong class="yellow-text"> Ricard</strong><strong class="white-text">, et ça </strong><strong class="yellow-text">repart</strong><strong class="white-text"> !</strong>
+                    <i class="fas fa-wine-bottle ml-2 yellow-text"></i>
+                </div>
+              </div>
+              <!-- Content -->
+  
+            </div>
+            <!-- Mask & flexbox options-->
+  
+          </div>
+        </div>
+        <!--/Third slide-->
+  
+        <!--Fourth slide-->
+        <div class="carousel-item">
+          <div class="view">
+  
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-slight d-flex justify-content-center align-items-center">
+  
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+
+                <div>
+                  <h5 class="mb-3">Mur des Slogans</h5>
+                </div>
+
+
+                <div class="pt-4 mb-4 font-italic">
+                    <i class="fas fa-dragon mr-2 red-text"></i>
+                    <strong class="white-text">Pays de Galles </strong><strong class="green-text">INDEPENDANT </strong><strong class="white-text">!</strong>
+                    <i class="fas fa-dragon ml-2 red-text"></i>
+                  </div>
+              </div>
+              <!-- Content -->
+  
+            </div>
+            <!-- Mask & flexbox options-->
+  
+          </div>
+        </div>
+        <!--/Fourth slide-->
+
+        <!--Fifth slide-->
+        <div class="carousel-item">
+          <div class="view">
+  
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-slight d-flex justify-content-center align-items-center">
+  
+              <!-- Content -->
+              <div class="text-center white-text mx-5 wow fadeIn">
+
+                <div>
+                  <h5 class="mb-3">Mur des Slogans</h5>
+                </div>
+
+
+                <div class="pt-4 mb-4 font-italic">
+                    <i class="fas fa-guitar mr-2 blue-text"></i>
+                    <strong>A qu'est-ce </strong><strong class="blue-text">qu'on est serré, </strong><strong>au fond </strong><strong class="blue-text">de cette boîte </strong><strong>! </strong>
+                    - P. Sébastien, 2006
+                    <i class="fas fa-guitar ml-2 blue-text"></i>
+                  </div>
+              </div>
+              <!-- Content -->
+  
+            </div>
+            <!-- Mask & flexbox options-->
+  
+          </div>
+        </div>
+        <!--/Fifth slide-->
+  
+      </div>
+      <!--/.Slides-->
+  
+      <!--Controls-->
+      <a class="carousel-control-prev" href="#carousel-example-2z" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-example-2z" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!--/.Controls-->
+  
+    </div>
+    <!-- Mur des Slogans -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2020 Copyright:
+      <strong class="blue-text">Efra</strong><strong class="white-text">nchou</strong><strong class="red-text">ille</strong>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script src="./js/mdb.min.js"></script>
+    <!-- Yeetus Maximus -->
+    <script src="./js/human-app.js"></script>
+    <!-- Animations -->
+    <script src="./js/custom-animations.js"></script>
+      <!-- Initializations -->
+  <script>
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>
