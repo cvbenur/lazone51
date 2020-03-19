@@ -2,7 +2,7 @@ const $ = require('./jquery-3.4.1.min.js');
 
 var on = 0;
 
-//  Showing/hiding the "Et pourquoi pas ?" element
+//  Showing/hiding the "Et pourquoi pas ?" element and changing the value of the button's text
 $('#show-btn').on('click', function() {
     if (on == 0) {
         $('#show-btn').removeClass('bounce');
@@ -11,7 +11,12 @@ $('#show-btn').on('click', function() {
         });
         
         setTimeout(function() {
-            $('#show-btn').children().eq(1).text("CHEH !");
+            if (konamiActivatedConfirmed == true) {
+                $('#show-btn').children().eq(1).text("Eh oui !");
+            } else {
+                $('#show-btn').children().eq(1).text("CHEH !");
+            }
+
             $('#show-btn').addClass('heartBeat');
         }, 700);
 
@@ -19,7 +24,7 @@ $('#show-btn').on('click', function() {
 
     } else if (on == 1) {
         $('#reponse').removeClass().addClass('animated fadeOutUp pt-5').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-            $(this).removeClass().addClass('pt-5 d-none');
+            $(this).removeClass().addClass('pt-5 invisible');
         });
         
         setTimeout(function() {
