@@ -2,16 +2,17 @@ const $ = require('./jquery-3.4.1.min.js');
 
 var on = 0;
 
+//  Showing/hiding the "Et pourquoi pas ?" element
 $('#show-btn').on('click', function() {
     if (on == 0) {
-        $('#show-btn').removeClass('bounce infinite');
-        $('#reponse').removeClass().addClass('pt-5 animated fadeInDown');
+        $('#show-btn').removeClass('bounce');
+        $('#reponse').removeClass().addClass('animated fadeInDown pt-5').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+            $(this).removeClass().addClass('pt-5');
+        });
         
         setTimeout(function() {
             $('#show-btn').children().eq(1).text("CHEH !");
-            $('#show-btn').addClass('heartBeat').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-                $(this).removeClass('heartBeat');
-            });
+            $('#show-btn').addClass('heartBeat');
         }, 700);
 
         on = 1;
@@ -23,6 +24,7 @@ $('#show-btn').on('click', function() {
         
         setTimeout(function() {
             $('#show-btn').children().eq(1).text("Clique ici !");
+            $('#show-btn').removeClass('heartBeat').addClass('bounce');
         }, 700);
 
         on = 0;
