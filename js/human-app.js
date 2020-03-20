@@ -7,7 +7,7 @@ $(document).ready(() => {
 	const easterEgg = new Konami(() => {
 
 		konamiActivatedConfirmed = true;
-		alert("Human'App est partout.");
+		alert("Human'App a encore frappé.");
 
 		let haLogo = {
 			src: require("../img/ziak/humanapp_logo.png"),
