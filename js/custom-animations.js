@@ -5,11 +5,10 @@ var on = 0;
 // Showing the text on click
 $('#vdc').on('click', function() {
     $(this).next().removeClass('invisible').addClass('animated fadeIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-        $(this).removeClass('animated fadeIn');
-        $(this).children().eq(0).text("T'as cru !");
-        $(this).children().eq(0).addClass('animated jackInTheBox');
+        $(this).children().eq(0).removeClass('invisible').addClass('animated jackInTheBox');
     });
 });
+
 
 //  Showing/hiding the "Et pourquoi pas ?" element and changing the value of the button's text
 $('#show-btn').on('click', function() {
