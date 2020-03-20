@@ -32,6 +32,7 @@ $(document).ready(() => {
 		});
 
 		$('#reponse').text("Human'App est partout.");
+		$('#vote-efranchouille').text("Human'app");
 	});
 
 	easterEgg.load();
